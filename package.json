@@ -1,0 +1,35 @@
+{
+  "name": "hotel-groovestreet",
+  "version": "1.0.0",
+  "description": "Official website for Hotel GrooveStreet - A luxury hotel website built with the Palatin template",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ./",
+    "dev": "live-server ./ --port=3000",
+    "build": "echo 'Build completed'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4ti8o/hotel-groovestreet.git"
+  },
+  "keywords": [
+    "hotel",
+    "website",
+    "luxury",
+    "accommodation",
+    "booking",
+    "travel",
+    "tourism"
+  ],
+  "author": "Hotel GrooveStreet Development Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4ti8o/hotel-groovestreet/issues"
+  },
+  "homepage": "https://github.com/4ti8o/hotel-groovestreet#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}
