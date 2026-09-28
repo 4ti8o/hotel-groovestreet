@@ -1,37 +1,36 @@
-# Hotel GrooveStreet Website
+# Hotel GrooveStreet Uganda Website
 
-Welcome to the official website of Hotel GrooveStreet - a luxury destination for discerning travelers seeking exceptional hospitality and comfort in the heart of the city.
+Welcome to the official website of Hotel GrooveStreet Uganda - a luxury destination for discerning travelers seeking exceptional hospitality and comfort in the heart of Kampala, Uganda. Experience the Pearl of Africa with world-class amenities and services.
 
 ## Overview
 
-Hotel GrooveStreet is a premier luxury hotel that combines contemporary elegance with warm, personalized service. Our website showcases our beautiful accommodations, premium amenities, and exceptional services designed to make every guest's stay unforgettable.
+Hotel GrooveStreet Uganda is a premier luxury hotel that combines contemporary elegance with warm, personalized service. Our website showcases our beautiful accommodations with views of the Rwenzori Mountains and Lake Victoria, premium amenities, and exceptional services designed to make every guest's stay unforgettable. From gorilla trekking packages to cultural experiences, we offer unique Ugandan hospitality.
 
 ## Features
 
-- Responsive design optimized for all devices
+- Responsive design optimized for all devices using Tailwind CSS
 - Modern, elegant aesthetic reflecting hotel's luxury positioning
 - Easy navigation to key sections: rooms, services, dining, and more
 - Online reservation system
-- Gallery showcasing hotel amenities and rooms
-- Contact information and location details
-- Blog section for hotel news and updates
+- Gallery showcasing hotel amenities and Ugandan landscapes
+- Contact information and location details in Kampala, Uganda
+- Blog section for hotel news and Ugandan travel updates
 
 ## Pages
 
-- **Home**: Welcome page highlighting hotel's key features and special offers
-- **About Us**: Learn about our history, mission, and team
-- **Rooms**: Detailed information about our various room types and suites
-- **Services**: Overview of amenities including spa, dining, and concierge services
-- **Contact**: Location, contact information, and inquiry form
-- **Blog**: Latest news, events, and articles from Hotel GrooveStreet
+- **Home**: Welcome page highlighting hotel's key features and special offers in Uganda
+- **About Us**: Learn about our history, mission, and commitment to African hospitality
+- **Rooms**: Detailed information about our various room types and suites with views of Uganda's natural beauty
+- **Services**: Overview of amenities including spa, dining with local flavors, and concierge services for exploring Uganda
+- **Contact**: Location in Kampala, Uganda, contact information, and inquiry form
+- **Blog**: Latest news, events, and articles from Hotel GrooveStreet Uganda
 - **Elements**: Sample page demonstrating website elements
 
 ## Technologies Used
 
 - HTML5
-- CSS3
+- Tailwind CSS (converted from Bootstrap)
 - JavaScript
-- Bootstrap Framework
 - jQuery
 - Responsive Design Principles
 
@@ -41,15 +40,17 @@ To run this website locally:
 
 1. Clone or download this repository to your local machine
 2. Navigate to the project directory
-3. Open [index.html](file:///D:%5CGROOVESTREET%5CWEB%5Chotel-groovestreet%5Cindex.html) in your preferred web browser
+3. Install dependencies: `npm install`
+4. Build Tailwind CSS: `npx tailwindcss -i ./src/input.css -o ./style.css`
+5. Open [index.html](file:///D:%5CGROOVESTREET%5CWEB%5Chotel-groovestreet%5Cindex.html) in your preferred web browser
 
 ## Customization
 
 The website is built with customization in mind. You can easily modify:
 
-- Content and text throughout the site
-- Images to match your property
-- Colors and styling in the CSS files
+- Content and text throughout the site to reflect Ugandan context
+- Images to match local property and attractions
+- Colors and styling in the Tailwind configuration
 - Functionality in the JavaScript files
 
 ## Contributing
