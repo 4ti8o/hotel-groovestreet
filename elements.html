@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Explore Hotel GrooveStreet Uganda's UI elements and features">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>The Palatin - Hotel &amp; Resort Template</title>
+    <title>Elements - Hotel GrooveStreet Uganda</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -21,7 +21,7 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader d-flex align-items-center justify-content-center">
+    <div class="preloader flex items-center justify-center">
         <div class="cssload-container">
             <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
         </div>
@@ -32,12 +32,12 @@
         <!-- Navbar Area -->
         <div class="palatin-main-menu">
             <div class="classy-nav-container breakpoint-off">
-                <div class="container">
+                <div class="container mx-auto px-4">
                     <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="palatinNav">
+                    <nav class="classy-navbar flex justify-between items-center" id="palatinNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand text-2xl font-bold text-blue-600">Hotel GrooveStreet</a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -99,12 +99,6 @@
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -128,24 +122,24 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/bg-9.jpg);">
-        <div class="bradcumbContent">
-            <h2>Elements</h2>
+    <section class="breadcumb-area bg-cover bg-overlay bg-fixed flex items-center justify-center" style="background-image: url(img/bg-img/bg-9.jpg);">
+        <div class="bradcumbContent text-center text-white">
+            <h2 class="text-4xl font-bold">Elements</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Book Now Area Start ##### -->
-    <div class="book-now-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10">
-                    <div class="book-now-form">
+    <div class="book-now-area py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="row justify-center">
+                <div class="col-12 col-lg-10 w-full lg:w-10/12">
+                    <div class="book-now-form bg-white p-8 rounded-lg shadow-lg">
                         <form action="#">
                             <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select1">Check In</label>
-                                <select class="form-control" id="select1">
+                            <div class="form-group mb-6">
+                                <label for="select1" class="block text-gray-700 font-medium mb-2">Check In</label>
+                                <select class="form-control w-full p-3 border rounded" id="select1">
                                   <option>19 June</option>
                                   <option>20 June</option>
                                   <option>21 June</option>
@@ -157,9 +151,9 @@
                             </div>
 
                             <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select2">Check Out</label>
-                                <select class="form-control" id="select2">
+                            <div class="form-group mb-6">
+                                <label for="select2" class="block text-gray-700 font-medium mb-2">Check Out</label>
+                                <select class="form-control w-full p-3 border rounded" id="select2">
                                   <option>20 June</option>
                                   <option>21 June</option>
                                   <option>22 June</option>
@@ -172,9 +166,9 @@
                             </div>
 
                             <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select3">Adults</label>
-                                <select class="form-control" id="select3">
+                            <div class="form-group mb-6">
+                                <label for="select3" class="block text-gray-700 font-medium mb-2">Adults</label>
+                                <select class="form-control w-full p-3 border rounded" id="select3">
                                   <option>02</option>
                                   <option>03</option>
                                   <option>04</option>
@@ -184,9 +178,9 @@
                             </div>
 
                             <!-- Form Group -->
-                            <div class="form-group">
-                                <label for="select4">Childrens</label>
-                                <select class="form-control" id="select4">
+                            <div class="form-group mb-6">
+                                <label for="select4" class="block text-gray-700 font-medium mb-2">Childrens</label>
+                                <select class="form-control w-full p-3 border rounded" id="select4">
                                   <option>01</option>
                                   <option>02</option>
                                   <option>03</option>
@@ -196,7 +190,7 @@
                             </div>
 
                             <!-- Button -->
-                            <button type="submit">Book Now</button>
+                            <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button>
                         </form>
                     </div>
                 </div>
@@ -206,65 +200,70 @@
     <!-- ##### Book Now Area End ##### -->
 
     <!-- ##### Elements Area Start ##### -->
-    <section class="elements-area">
-        <div class="container">
+    <section class="elements-area py-20">
+        <div class="container mx-auto">
             <div class="row">
 
                 <!-- ##### Buttons ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>Buttons</h2>
+                <div class="col-12 w-full">
+                    <div class="elements-title mb-12">
+                        <h2 class="text-3xl font-bold">Buttons</h2>
                     </div>
                     <!-- Buttons -->
-                    <div class="palatin-buttons-area mb-100">
-                        <a href="#" class="btn palatin-btn m-2">Send message</a>
-                        <a href="#" class="btn palatin-btn btn-2 m-2">Send message</a>
-                        <a href="#" class="btn palatin-btn btn-3 m-2">Send message</a>
+                    <div class="palatin-buttons-area mb-16 flex flex-wrap">
+                        <a href="#" class="btn palatin-btn m-2 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Send message</a>
+                        <a href="#" class="btn palatin-btn btn-2 m-2 px-6 py-3 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">Send message</a>
+                        <a href="#" class="btn palatin-btn btn-3 m-2 px-6 py-3 bg-transparent border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white">Send message</a>
                     </div>
                 </div>
 
                 <!-- ##### Progress Bars & Accordions ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>Accordians &amp; Tabs</h2>
+                <div class="col-12 w-full">
+                    <div class="elements-title mb-8">
+                        <h2 class="text-3xl font-bold">Accordians &amp; Tabs</h2>
                     </div>
                 </div>
 
                 <!-- ##### Accordians ##### -->
-                <div class="col-12 col-lg-6">
-                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="col-12 col-lg-6 w-full lg:w-1/2">
+                    <div class="accordions mb-16" id="accordion" role="tablist" aria-multiselectable="true">
                         <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Sceleri sque, at rutrum nulla dictum. Ut ac ligula
-                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                    </a></h6>
-                            <div id="collapseOne" class="accordion-content collapse show">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                        <div class="panel single-accordion border-b border-gray-200">
+                            <h6 class="mb-0">
+                                <a role="button" class="flex justify-between items-center p-4 w-full text-left bg-gray-50 hover:bg-gray-100" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Sceleri sque, at rutrum nulla dictum. Ut ac ligula
+                                    <span class="accor-open"><i class="fa fa-plus text-blue-600" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus text-blue-600" aria-hidden="true"></i></span>
+                                </a>
+                            </h6>
+                            <div id="collapseOne" class="accordion-content collapse show p-4 bg-white">
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
                             </div>
                         </div>
                         <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">Consectetur adipiscing elit. Donec malesuada
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                        </a>
+                        <div class="panel single-accordion border-b border-gray-200">
+                            <h6 class="mb-0">
+                                <a role="button" class="collapsed flex justify-between items-center p-4 w-full text-left bg-gray-50 hover:bg-gray-100" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
+                                    Consectetur adipiscing elit. Donec malesuada
+                                    <span class="accor-open"><i class="fa fa-plus text-blue-600" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus text-blue-600" aria-hidden="true"></i></span>
+                                </a>
                             </h6>
-                            <div id="collapseTwo" class="accordion-content collapse">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                            <div id="collapseTwo" class="accordion-content collapse p-4 bg-white">
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
                             </div>
                         </div>
                         <!-- single accordian area -->
-                        <div class="panel single-accordion">
-                            <h6>
-                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
-                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
-                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
-                                    </a>
+                        <div class="panel single-accordion border-b border-gray-200">
+                            <h6 class="mb-0">
+                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed flex justify-between items-center p-4 w-full text-left bg-gray-50 hover:bg-gray-100" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
+                                    Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
+                                    <span class="accor-open"><i class="fa fa-plus text-blue-600" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus text-blue-600" aria-hidden="true"></i></span>
+                                </a>
                             </h6>
-                            <div id="collapseThree" class="accordion-content collapse">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                            <div id="collapseThree" class="accordion-content collapse p-4 bg-white">
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
                             </div>
                         </div>
                     </div>
@@ -272,26 +271,26 @@
 
 
                 <!-- ##### Tabs ##### -->
-                <div class="col-12 col-lg-6">
-                    <div class="palatin-tabs-content">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Mauris diam</a>
+                <div class="col-12 col-lg-6 w-full lg:w-1/2">
+                    <div class="palatin-tabs-content bg-white rounded-lg shadow-md p-6">
+                        <ul class="nav nav-tabs flex border-b" id="myTab" role="tablist">
+                            <li class="nav-item flex-1">
+                                <a class="nav-link block py-3 text-center text-blue-600 border-b-2 border-transparent hover:border-blue-300" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Mauris diam</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Ttristique sed posuere</a>
+                            <li class="nav-item flex-1">
+                                <a class="nav-link block py-3 text-center text-blue-600 border-b-2 border-transparent hover:border-blue-300" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Ttristique sed posuere</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Lobortis eget metus</a>
+                            <li class="nav-item flex-1">
+                                <a class="nav-link active block py-3 text-center text-blue-600 border-b-2 border-blue-600" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Lobortis eget metus</a>
                             </li>
                         </ul>
 
-                        <div class="tab-content mb-100" id="myTabContent">
+                        <div class="tab-content mb-16" id="myTabContent">
                             <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
                                 <div class="palatin-tab-content">
                                     <!-- Tab Text -->
                                     <div class="palatin-tab-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +298,7 @@
                                 <div class="palatin-tab-content">
                                     <!-- Tab Text -->
                                     <div class="palatin-tab-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +306,7 @@
                                 <div class="palatin-tab-content">
                                     <!-- Tab Text -->
                                     <div class="palatin-tab-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
+                                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
                                     </div>
                                 </div>
                             </div>
@@ -316,57 +315,49 @@
                 </div>
 
                 <!-- ##### Milestones ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>Milestones</h2>
+                <div class="col-12 w-full">
+                    <div class="elements-title mb-8">
+                        <h2 class="text-3xl font-bold">Milestones</h2>
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 w-full">
                     <div class="palatin-cool-facts-area">
-                        <div class="row">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                             <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-text">
-                                        <i class="icon-cocktail-1"></i>
-                                        <h2><span class="counter">231</span></h2>
-                                        <p>Cocktails/day</p>
-                                    </div>
+                            <div class="single-cool-fact mb-12 text-center">
+                                <div class="scf-text">
+                                    <i class="icon-cocktail-1 text-5xl text-blue-600 mb-4"></i>
+                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">231</span></h2>
+                                    <p class="text-gray-600">Cocktails/day</p>
                                 </div>
                             </div>
 
                             <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-text">
-                                        <i class="icon-swimming-pool"></i>
-                                        <h2><span class="counter">3</span></h2>
-                                        <p>Pools</p>
-                                    </div>
+                            <div class="single-cool-fact mb-12 text-center">
+                                <div class="scf-text">
+                                    <i class="icon-swimming-pool text-5xl text-blue-600 mb-4"></i>
+                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">3</span></h2>
+                                    <p class="text-gray-600">Pools</p>
                                 </div>
                             </div>
 
                             <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-text">
-                                        <i class="icon-resort"></i>
-                                        <h2><span class="counter">79</span></h2>
-                                        <p>Rooms</p>
-                                    </div>
+                            <div class="single-cool-fact mb-12 text-center">
+                                <div class="scf-text">
+                                    <i class="icon-resort text-5xl text-blue-600 mb-4"></i>
+                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">79</span></h2>
+                                    <p class="text-gray-600">Rooms</p>
                                 </div>
                             </div>
 
                             <!-- Single Cool Facts -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-cool-fact mb-100">
-                                    <div class="scf-text">
-                                        <i class="icon-restaurant"></i>
-                                        <h2><span class="counter">25</span></h2>
-                                        <p>Apartments</p>
-                                    </div>
+                            <div class="single-cool-fact mb-12 text-center">
+                                <div class="scf-text">
+                                    <i class="icon-restaurant text-5xl text-blue-600 mb-4"></i>
+                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">25</span></h2>
+                                    <p class="text-gray-600">Apartments</p>
                                 </div>
                             </div>
 
@@ -375,61 +366,53 @@
                 </div>
 
                 <!-- ##### Loaders ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>Loaders</h2>
+                <div class="col-12 w-full">
+                    <div class="elements-title mb-8">
+                        <h2 class="text-3xl font-bold">Loaders</h2>
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 w-full">
                     <!-- Loaders Area Start -->
                     <div class="our-skills-area">
-                        <div class="row">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                             <!-- Single Skills Area -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-skils-area mb-100">
-                                    <div id="circle" class="circle" data-value="0.90">
-                                        <div class="skills-text">
-                                            <span>90%</span>
-                                            <p>Tourists</p>
-                                        </div>
+                            <div class="single-skils-area mb-12 text-center">
+                                <div id="circle" class="circle mx-auto w-40 h-40" data-value="0.90">
+                                    <div class="skills-text">
+                                        <span class="text-2xl font-bold">90%</span>
+                                        <p class="text-gray-600 mt-2">Tourists</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Single Skills Area -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-skils-area mb-100">
-                                    <div id="circle2" class="circle" data-value="0.75">
-                                        <div class="skills-text">
-                                            <span>75%</span>
-                                            <p>Passion</p>
-                                        </div>
+                            <div class="single-skils-area mb-12 text-center">
+                                <div id="circle2" class="circle mx-auto w-40 h-40" data-value="0.75">
+                                    <div class="skills-text">
+                                        <span class="text-2xl font-bold">75%</span>
+                                        <p class="text-gray-600 mt-2">Passion</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Single Skills Area -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-skils-area mb-100">
-                                    <div id="circle3" class="circle" data-value="1">
-                                        <div class="skills-text">
-                                            <span>100%</span>
-                                            <p>Satisfaction</p>
-                                        </div>
+                            <div class="single-skils-area mb-12 text-center">
+                                <div id="circle3" class="circle mx-auto w-40 h-40" data-value="1">
+                                    <div class="skills-text">
+                                        <span class="text-2xl font-bold">100%</span>
+                                        <p class="text-gray-600 mt-2">Satisfaction</p>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Single Skills Area -->
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <div class="single-skils-area mb-100">
-                                    <div id="circle4" class="circle" data-value="0.80">
-                                        <div class="skills-text">
-                                            <span>80%</span>
-                                            <p>Fun</p>
-                                        </div>
+                            <div class="single-skils-area mb-12 text-center">
+                                <div id="circle4" class="circle mx-auto w-40 h-40" data-value="0.80">
+                                    <div class="skills-text">
+                                        <span class="text-2xl font-bold">80%</span>
+                                        <p class="text-gray-600 mt-2">Fun</p>
                                     </div>
                                 </div>
                             </div>
@@ -438,340 +421,94 @@
                 </div>
 
                 <!-- ##### Icon Boxes ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>Icon Boxes</h2>
+                <div class="col-12 w-full">
+                    <div class="elements-title mb-8">
+                        <h2 class="text-3xl font-bold">Icon Boxes</h2>
                     </div>
                 </div>
 
-                <div class="col-12">
-                    <div class="row">
+                <div class="col-12 w-full">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                         <!-- Single Service Area -->
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="single-service-area mb-100">
-                                <i class="icon-trekking"></i>
-                                <h4>Bike Rentals</h4>
-                                <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
-                            </div>
+                        <div class="single-service-area mb-12 text-center p-6 bg-white rounded-lg shadow-md">
+                            <i class="icon-trekking text-5xl text-blue-600 mb-4"></i>
+                            <h4 class="text-xl font-bold mb-3">Gorilla Trekking</h4>
+                            <p class="text-gray-600">Experience the thrill of tracking mountain gorillas in Bwindi Impenetrable Forest. Our expert guides ensure a safe and unforgettable encounter with these magnificent creatures in their natural habitat.</p>
                         </div>
 
                         <!-- Single Service Area -->
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="single-service-area mb-100">
-                                <i class="icon-boat"></i>
-                                <h4>Boat Trips</h4>
-                                <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
-                            </div>
+                        <div class="single-service-area mb-12 text-center p-6 bg-white rounded-lg shadow-md">
+                            <i class="icon-boat text-5xl text-blue-600 mb-4"></i>
+                            <h4 class="text-xl font-bold mb-3">Lake Victoria Cruises</h4>
+                            <p class="text-gray-600">Enjoy serene boat trips on Africa's largest lake. Watch the sunset over the water while spotting hippos, crocodiles, and countless bird species native to Uganda.</p>
                         </div>
 
                         <!-- Single Service Area -->
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="single-service-area mb-100">
-                                <i class="icon-restaurant"></i>
-                                <h4>Restaurants</h4>
-                                <p>Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor.</p>
-                            </div>
+                        <div class="single-service-area mb-12 text-center p-6 bg-white rounded-lg shadow-md">
+                            <i class="icon-restaurant text-5xl text-blue-600 mb-4"></i>
+                            <h4 class="text-xl font-bold mb-3">Traditional Cuisine</h4>
+                            <p class="text-gray-600">Savor authentic Ugandan flavors with dishes like matooke, groundnut stew, and fresh Nile perch. Our chefs blend traditional recipes with modern presentation.</p>
                         </div>
 
                     </div>
                 </div>
 
                 <!-- ##### Icon Boxes ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>All Icons</h2>
+                <div class="col-12 w-full">
+                    <div class="elements-title mb-8">
+                        <h2 class="text-3xl font-bold">All Icons</h2>
                     </div>
                 </div>
 
-                <div class="col-12 mb-100">
-                    <div class="row">                   
+                <div class="col-12 mb-16 w-full">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">                   
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-wallet"></i>
-                                <span>icon-wallet</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-wallet text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-wallet</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-trekking"></i>
-                                <span>icon-trekking</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-trekking text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-trekking</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-boarding-pass"></i>
-                                <span>icon-boarding-pass</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-boarding-pass text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-boarding-pass</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-train"></i>
-                                <span>icon-train</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-train text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-train</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-binoculars"></i>
-                                <span>icon-binoculars</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-binoculars text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-binoculars</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-swimming-pool"></i>
-                                <span>icon-swimming-pool</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-swimming-pool text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-swimming-pool</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-sunset"></i>
-                                <span>icon-sunset</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-sunset text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-sunset</span>
                         </div>
                         
                         <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-sunglasses"></i>
-                                <span>icon-sunglasses</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-suitcase"></i>
-                                <span>icon-suitcase</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-goggle"></i>
-                                <span>icon-goggle</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-restaurant"></i>
-                                <span>icon-restaurant</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-postcard"></i>
-                                <span>icon-postcard</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-adaptor"></i>
-                                <span>icon-adaptor</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-photo"></i>
-                                <span>icon-photo</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-passport"></i>
-                                <span>icon-passport</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-navigation"></i>
-                                <span>icon-navigation</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-mountain"></i>
-                                <span>icon-mountain</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-map-1"></i>
-                                <span>icon-map-1</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-limousine"></i>
-                                <span>icon-limousine</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-landmark"></i>
-                                <span>icon-landmark</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-resort"></i>
-                                <span>icon-resort</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-sign"></i>
-                                <span>icon-sign</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-flip-flops"></i>
-                                <span>icon-flip-flops</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-map"></i>
-                                <span>icon-map</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-take-off"></i>
-                                <span>icon-take-off</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-boat"></i>
-                                <span>icon-boat</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-compass"></i>
-                                <span>icon-compass</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-cocktail-1"></i>
-                                <span>icon-cocktail-1</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-cocktail"></i>
-                                <span>icon-cocktail</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-credit-card"></i>
-                                <span>icon-credit-card</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-camera"></i>
-                                <span>icon-camera</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-calendar"></i>
-                                <span>icon-calendar</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-island"></i>
-                                <span>icon-island</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-beach"></i>
-                                <span>icon-beach</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-around"></i>
-                                <span>icon-around</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="single-icon mb-30">
-                                <i class="icon-plane"></i>
-                                <span>icon-plane</span>
-                            </div>
+                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
+                            <i class="icon-sunglasses text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-sm">icon-sunglasses</span>
                         </div>
                     </div>
                 </div>
@@ -781,42 +518,47 @@
     <!-- ##### Elements Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
+    <footer class="footer-area bg-gray-800 text-white py-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-lg-5">
-                    <div class="footer-widget-area mt-50">
-                        <a href="#" class="d-block mb-5"><img src="img/core-img/logo.png" alt=""></a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. </p>
+                <div class="mt-8">
+                    <div class="footer-widget-area">
+                        <a href="#" class="d-block mb-5 block">
+                          <h1 class="text-3xl font-bold text-white">Hotel GrooveStreet</h1>
+                          <p class="text-gray-300 text-sm">Kampala, Uganda</p>
+                        </a>
+                        <p class="text-gray-300">Welcome to Hotel GrooveStreet, where luxury meets African hospitality. We pride ourselves on delivering exceptional service and creating memorable experiences for every guest exploring the Pearl of Africa.</p>
                     </div>
                 </div>
 
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Find us on the map</h6>
-                        <img src="img/bg-img/footer-map.png" alt="">
+                <div class="mt-8">
+                    <div class="footer-widget-area">
+                        <h6 class="widget-title mb-5 text-lg font-medium">Find us on the map</h6>
+                        <img src="img/bg-img/footer-map.png" alt="Location Map" class="w-full max-w-xs">
                     </div>
                 </div>
 
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
+                <div class="mt-8">
+                    <div class="footer-widget-area">
+                        <h6 class="widget-title mb-5 text-lg font-medium">Subscribe to our newsletter</h6>
                         <form action="#" method="post" class="subscribe-form">
-                            <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail">
-                            <button type="submit">Subscribe</button>
+                            <div class="flex">
+                              <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail" class="flex-grow p-2 rounded-l text-gray-700">
+                              <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r">Subscribe</button>
+                            </div>
                         </form>
                     </div>
                 </div>
 
                 <!-- Copywrite Text -->
-                <div class="col-12">
-                    <div class="copywrite-text mt-30">
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <div class="col-12 mt-8">
+                    <div class="copywrite-text text-center text-gray-400">
+                        <p class="text-sm"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Hotel GrooveStreet Uganda
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>

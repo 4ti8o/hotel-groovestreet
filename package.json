@@ -6,8 +6,9 @@
   "scripts": {
     "start": "serve ./",
     "dev": "live-server ./ --port=3000",
-    "build": "echo 'Build completed'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss -i ./src/input.css -o ./style.css --minify && echo 'Build completed'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,9 @@
   "homepage": "https://github.com/4ti8o/hotel-groovestreet#readme",
   "devDependencies": {
     "live-server": "^1.2.2",
-    "serve": "^14.2.1"
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19"
   }
 }
