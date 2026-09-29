@@ -1,583 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore Hotel GrooveStreet Uganda's UI elements and features">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Elements - Hotel GrooveStreet Uganda</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Core Stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elements — Hotel GrooveStreet Uganda</title>
+    <meta name="description" content="A sample page demonstrating the typography, buttons, forms and components used across the Hotel GrooveStreet Uganda website.">
+    <meta name="theme-color" content="#111113">
+    <link rel="icon" href="img/core-img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-<body>
-    <!-- Preloader -->
-    <div class="preloader flex items-center justify-center">
-        <div class="cssload-container">
-            <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
-        </div>
-    </div>
+<body class="bg-white text-ink-700">
+    <a href="#main"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-ink-900 focus:text-white focus:px-5 focus:py-3 focus:rounded-sm">Skip to content</a>
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-        <!-- Navbar Area -->
-        <div class="palatin-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container mx-auto px-4">
-                    <!-- Menu -->
-                    <nav class="classy-navbar flex justify-between items-center" id="palatinNav">
-
-                        <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand text-2xl font-bold text-blue-600">Hotel GrooveStreet</a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="rooms.html">Rooms</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="rooms.html">Rooms</a></li>
-                                                <li><a href="blog.html">News</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index.html">Home</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-
-                                <!-- Button -->
-                                <div class="menu-btn">
-                                    <a href="#" class="btn palatin-btn">Make a Reservation</a>
-                                </div>
-
-                            </div>
-                            <!-- Nav End -->
-                        </div>
-                    </nav>
+    <!-- ================= Header ================= -->
+    <header data-header class="fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-smooth text-white">
+        <div class="container">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                <a href="index.html" class="flex items-center gap-3">
+                    <span class="grid place-items-center w-11 h-11 rounded-full bg-gold-500 text-white shrink-0 shadow-lg shadow-gold-900/20">
+                        <span class="font-display text-xl leading-none pt-0.5">G</span>
+                    </span>
+                    <span class="leading-tight">
+                        <span class="block font-display text-xl md:text-2xl font-medium">GrooveStreet</span>
+                        <span class="block text-[0.6rem] uppercase tracking-widest2 text-gold-300">Kampala · Uganda</span>
+                    </span>
+                </a>
+                <nav class="hidden lg:flex items-center gap-9" aria-label="Primary">
+                    <a href="index.html" class="nav-link">__</a>
+                    <a href="about-us.html" class="nav-link">About Us</a>
+                    <a href="rooms.html" class="nav-link">Rooms</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="blog.html" class="nav-link">News</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="hidden lg:block">
+                    <a href="#booking" data-reserve-link class="btn-gold">Make a Reservation</a>
                 </div>
+                <button type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav"
+                    aria-label="Open menu" class="lg:hidden grid place-items-center w-11 h-11 -mr-2">
+                    <span class="relative block w-6 h-4">
+                        <span class="absolute inset-x-0 top-0 h-px bg-current" data-bar="1"></span>
+                        <span class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-px bg-current" data-bar="2"></span>
+                        <span class="absolute inset-x-0 bottom-0 h-px bg-current" data-bar="3"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div data-nav-overlay class="fixed inset-0 z-40 bg-ink-950/60 hidden lg:hidden"></div>
+        <div id="mobile-nav" data-nav-panel aria-hidden="true"
+            class="fixed top-0 right-0 z-50 h-full w-[min(20rem,85vw)] bg-ink-900 text-white translate-x-full transition-transform duration-500 ease-smooth lg:hidden flex flex-col">
+            <div class="flex items-center justify-between px-6 h-20 border-b border-white/10">
+                <span class="font-display text-xl">Menu</span>
+                <button type="button" data-nav-close aria-label="Close menu"
+                    class="grid place-items-center w-10 h-10 text-gold-400">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        aria-hidden="true">
+                        <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex-1 overflow-y-auto px-6 py-6 space-y-1" aria-label="Mobile">
+                <a href="index.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">Home</a>
+                <a href="about-us.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">About Us</a>
+                <a href="rooms.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">Rooms</a>
+                <a href="services.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">Services</a>
+                <a href="blog.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">News</a>
+                <a href="contact.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">Contact</a>
+                <a href="elements.html" class="block py-3 border-b border-white/5 hover:text-gold-400 transition-colors">Elements</a>
+            </nav>
+            <div class="p-6 border-t border-white/10">
+                <a href="#booking" data-reserve-link class="btn-gold w-full">Make a Reservation</a>
+                <p class="mt-4 text-sm text-white/50">Plot 12, Buganda Road, Kampala<br>+256 414 123 456</p>
             </div>
         </div>
     </header>
-    <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-cover bg-overlay bg-fixed flex items-center justify-center" style="background-image: url(img/bg-img/bg-9.jpg);">
-        <div class="bradcumbContent text-center text-white">
-            <h2 class="text-4xl font-bold">Elements</h2>
-        </div>
-    </section>
-    <!-- ##### Breadcumb Area End ##### -->
-
-    <!-- ##### Book Now Area Start ##### -->
-    <div class="book-now-area py-12 bg-gray-100">
-        <div class="container mx-auto">
-            <div class="row justify-center">
-                <div class="col-12 col-lg-10 w-full lg:w-10/12">
-                    <div class="book-now-form bg-white p-8 rounded-lg shadow-lg">
-                        <form action="#">
-                            <!-- Form Group -->
-                            <div class="form-group mb-6">
-                                <label for="select1" class="block text-gray-700 font-medium mb-2">Check In</label>
-                                <select class="form-control w-full p-3 border rounded" id="select1">
-                                  <option>19 June</option>
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group mb-6">
-                                <label for="select2" class="block text-gray-700 font-medium mb-2">Check Out</label>
-                                <select class="form-control w-full p-3 border rounded" id="select2">
-                                  <option>20 June</option>
-                                  <option>21 June</option>
-                                  <option>22 June</option>
-                                  <option>23 June</option>
-                                  <option>24 June</option>
-                                  <option>25 June</option>
-                                  <option>26 June</option>
-                                  <option>27 June</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group mb-6">
-                                <label for="select3" class="block text-gray-700 font-medium mb-2">Adults</label>
-                                <select class="form-control w-full p-3 border rounded" id="select3">
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                  <option>06</option>
-                                </select>
-                            </div>
-
-                            <!-- Form Group -->
-                            <div class="form-group mb-6">
-                                <label for="select4" class="block text-gray-700 font-medium mb-2">Childrens</label>
-                                <select class="form-control w-full p-3 border rounded" id="select4">
-                                  <option>01</option>
-                                  <option>02</option>
-                                  <option>03</option>
-                                  <option>04</option>
-                                  <option>05</option>
-                                </select>
-                            </div>
-
-                            <!-- Button -->
-                            <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button>
-                        </form>
-                    </div>
-                </div>
+    <main id="main">
+        <!-- ================= Page banner ================= -->
+        <section class="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden bg-ink-950">
+            <img src="img/bg-img/bg-9.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover">
+            <div class="overlay-darker"></div>
+            <div class="container relative text-center text-white">
+                <span class="eyebrow text-gold-300">Hotel GrooveStreet Uganda</span>
+                <h1 class="heading-xl text-white mt-5">Elements</h1>
+                <p class="lede text-white/80 mx-auto mt-5">A sample page demonstrating the building blocks of this website</p>
             </div>
-        </div>
-    </div>
-    <!-- ##### Book Now Area End ##### -->
+        </section>
 
-    <!-- ##### Elements Area Start ##### -->
-    <section class="elements-area py-20">
-        <div class="container mx-auto">
-            <div class="row">
-
-                <!-- ##### Buttons ##### -->
-                <div class="col-12 w-full">
-                    <div class="elements-title mb-12">
-                        <h2 class="text-3xl font-bold">Buttons</h2>
-                    </div>
-                    <!-- Buttons -->
-                    <div class="palatin-buttons-area mb-16 flex flex-wrap">
-                        <a href="#" class="btn palatin-btn m-2 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Send message</a>
-                        <a href="#" class="btn palatin-btn btn-2 m-2 px-6 py-3 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">Send message</a>
-                        <a href="#" class="btn palatin-btn btn-3 m-2 px-6 py-3 bg-transparent border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white">Send message</a>
-                    </div>
-                </div>
-
-                <!-- ##### Progress Bars & Accordions ##### -->
-                <div class="col-12 w-full">
-                    <div class="elements-title mb-8">
-                        <h2 class="text-3xl font-bold">Accordians &amp; Tabs</h2>
-                    </div>
-                </div>
-
-                <!-- ##### Accordians ##### -->
-                <div class="col-12 col-lg-6 w-full lg:w-1/2">
-                    <div class="accordions mb-16" id="accordion" role="tablist" aria-multiselectable="true">
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion border-b border-gray-200">
-                            <h6 class="mb-0">
-                                <a role="button" class="flex justify-between items-center p-4 w-full text-left bg-gray-50 hover:bg-gray-100" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    Sceleri sque, at rutrum nulla dictum. Ut ac ligula
-                                    <span class="accor-open"><i class="fa fa-plus text-blue-600" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-minus text-blue-600" aria-hidden="true"></i></span>
-                                </a>
-                            </h6>
-                            <div id="collapseOne" class="accordion-content collapse show p-4 bg-white">
-                                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion border-b border-gray-200">
-                            <h6 class="mb-0">
-                                <a role="button" class="collapsed flex justify-between items-center p-4 w-full text-left bg-gray-50 hover:bg-gray-100" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
-                                    Consectetur adipiscing elit. Donec malesuada
-                                    <span class="accor-open"><i class="fa fa-plus text-blue-600" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-minus text-blue-600" aria-hidden="true"></i></span>
-                                </a>
-                            </h6>
-                            <div id="collapseTwo" class="accordion-content collapse p-4 bg-white">
-                                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                        <!-- single accordian area -->
-                        <div class="panel single-accordion border-b border-gray-200">
-                            <h6 class="mb-0">
-                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed flex justify-between items-center p-4 w-full text-left bg-gray-50 hover:bg-gray-100" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
-                                    Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
-                                    <span class="accor-open"><i class="fa fa-plus text-blue-600" aria-hidden="true"></i></span>
-                                    <span class="accor-close"><i class="fa fa-minus text-blue-600" aria-hidden="true"></i></span>
-                                </a>
-                            </h6>
-                            <div id="collapseThree" class="accordion-content collapse p-4 bg-white">
-                                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- ##### Tabs ##### -->
-                <div class="col-12 col-lg-6 w-full lg:w-1/2">
-                    <div class="palatin-tabs-content bg-white rounded-lg shadow-md p-6">
-                        <ul class="nav nav-tabs flex border-b" id="myTab" role="tablist">
-                            <li class="nav-item flex-1">
-                                <a class="nav-link block py-3 text-center text-blue-600 border-b-2 border-transparent hover:border-blue-300" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Mauris diam</a>
-                            </li>
-                            <li class="nav-item flex-1">
-                                <a class="nav-link block py-3 text-center text-blue-600 border-b-2 border-transparent hover:border-blue-300" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Ttristique sed posuere</a>
-                            </li>
-                            <li class="nav-item flex-1">
-                                <a class="nav-link active block py-3 text-center text-blue-600 border-b-2 border-blue-600" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Lobortis eget metus</a>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content mb-16" id="myTabContent">
-                            <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab--1">
-                                <div class="palatin-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="palatin-tab-text">
-                                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
-                                <div class="palatin-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="palatin-tab-text">
-                                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show active" id="tab3" role="tabpanel" aria-labelledby="tab--3">
-                                <div class="palatin-tab-content">
-                                    <!-- Tab Text -->
-                                    <div class="palatin-tab-text">
-                                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ##### Milestones ##### -->
-                <div class="col-12 w-full">
-                    <div class="elements-title mb-8">
-                        <h2 class="text-3xl font-bold">Milestones</h2>
-                    </div>
-                </div>
-
-                <div class="col-12 w-full">
-                    <div class="palatin-cool-facts-area">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-                            <!-- Single Cool Facts -->
-                            <div class="single-cool-fact mb-12 text-center">
-                                <div class="scf-text">
-                                    <i class="icon-cocktail-1 text-5xl text-blue-600 mb-4"></i>
-                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">231</span></h2>
-                                    <p class="text-gray-600">Cocktails/day</p>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="single-cool-fact mb-12 text-center">
-                                <div class="scf-text">
-                                    <i class="icon-swimming-pool text-5xl text-blue-600 mb-4"></i>
-                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">3</span></h2>
-                                    <p class="text-gray-600">Pools</p>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="single-cool-fact mb-12 text-center">
-                                <div class="scf-text">
-                                    <i class="icon-resort text-5xl text-blue-600 mb-4"></i>
-                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">79</span></h2>
-                                    <p class="text-gray-600">Rooms</p>
-                                </div>
-                            </div>
-
-                            <!-- Single Cool Facts -->
-                            <div class="single-cool-fact mb-12 text-center">
-                                <div class="scf-text">
-                                    <i class="icon-restaurant text-5xl text-blue-600 mb-4"></i>
-                                    <h2 class="text-4xl font-bold mb-2"><span class="counter">25</span></h2>
-                                    <p class="text-gray-600">Apartments</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ##### Loaders ##### -->
-                <div class="col-12 w-full">
-                    <div class="elements-title mb-8">
-                        <h2 class="text-3xl font-bold">Loaders</h2>
-                    </div>
-                </div>
-
-                <div class="col-12 w-full">
-                    <!-- Loaders Area Start -->
-                    <div class="our-skills-area">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                            <!-- Single Skills Area -->
-                            <div class="single-skils-area mb-12 text-center">
-                                <div id="circle" class="circle mx-auto w-40 h-40" data-value="0.90">
-                                    <div class="skills-text">
-                                        <span class="text-2xl font-bold">90%</span>
-                                        <p class="text-gray-600 mt-2">Tourists</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Skills Area -->
-                            <div class="single-skils-area mb-12 text-center">
-                                <div id="circle2" class="circle mx-auto w-40 h-40" data-value="0.75">
-                                    <div class="skills-text">
-                                        <span class="text-2xl font-bold">75%</span>
-                                        <p class="text-gray-600 mt-2">Passion</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Skills Area -->
-                            <div class="single-skils-area mb-12 text-center">
-                                <div id="circle3" class="circle mx-auto w-40 h-40" data-value="1">
-                                    <div class="skills-text">
-                                        <span class="text-2xl font-bold">100%</span>
-                                        <p class="text-gray-600 mt-2">Satisfaction</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Skills Area -->
-                            <div class="single-skils-area mb-12 text-center">
-                                <div id="circle4" class="circle mx-auto w-40 h-40" data-value="0.80">
-                                    <div class="skills-text">
-                                        <span class="text-2xl font-bold">80%</span>
-                                        <p class="text-gray-600 mt-2">Fun</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ##### Icon Boxes ##### -->
-                <div class="col-12 w-full">
-                    <div class="elements-title mb-8">
-                        <h2 class="text-3xl font-bold">Icon Boxes</h2>
-                    </div>
-                </div>
-
-                <div class="col-12 w-full">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                        <!-- Single Service Area -->
-                        <div class="single-service-area mb-12 text-center p-6 bg-white rounded-lg shadow-md">
-                            <i class="icon-trekking text-5xl text-blue-600 mb-4"></i>
-                            <h4 class="text-xl font-bold mb-3">Gorilla Trekking</h4>
-                            <p class="text-gray-600">Experience the thrill of tracking mountain gorillas in Bwindi Impenetrable Forest. Our expert guides ensure a safe and unforgettable encounter with these magnificent creatures in their natural habitat.</p>
-                        </div>
-
-                        <!-- Single Service Area -->
-                        <div class="single-service-area mb-12 text-center p-6 bg-white rounded-lg shadow-md">
-                            <i class="icon-boat text-5xl text-blue-600 mb-4"></i>
-                            <h4 class="text-xl font-bold mb-3">Lake Victoria Cruises</h4>
-                            <p class="text-gray-600">Enjoy serene boat trips on Africa's largest lake. Watch the sunset over the water while spotting hippos, crocodiles, and countless bird species native to Uganda.</p>
-                        </div>
-
-                        <!-- Single Service Area -->
-                        <div class="single-service-area mb-12 text-center p-6 bg-white rounded-lg shadow-md">
-                            <i class="icon-restaurant text-5xl text-blue-600 mb-4"></i>
-                            <h4 class="text-xl font-bold mb-3">Traditional Cuisine</h4>
-                            <p class="text-gray-600">Savor authentic Ugandan flavors with dishes like matooke, groundnut stew, and fresh Nile perch. Our chefs blend traditional recipes with modern presentation.</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- ##### Icon Boxes ##### -->
-                <div class="col-12 w-full">
-                    <div class="elements-title mb-8">
-                        <h2 class="text-3xl font-bold">All Icons</h2>
-                    </div>
-                </div>
-
-                <div class="col-12 mb-16 w-full">
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">                   
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-wallet text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-wallet</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-trekking text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-trekking</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-boarding-pass text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-boarding-pass</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-train text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-train</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-binoculars text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-binoculars</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-swimming-pool text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-swimming-pool</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-sunset text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-sunset</span>
-                        </div>
-                        
-                        <!-- Single Icon -->
-                        <div class="single-icon mb-6 text-center p-4 bg-gray-50 rounded">
-                            <i class="icon-sunglasses text-3xl text-blue-600 mb-2"></i>
-                            <span class="text-sm">icon-sunglasses</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Elements Area End ##### -->
-
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area bg-gray-800 text-white py-12">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Footer Widget Area -->
-                <div class="mt-8">
-                    <div class="footer-widget-area">
-                        <a href="#" class="d-block mb-5 block">
-                          <h1 class="text-3xl font-bold text-white">Hotel GrooveStreet</h1>
-                          <p class="text-gray-300 text-sm">Kampala, Uganda</p>
+        undefined</main>
+    <!-- ================= Footer ================= -->
+    <footer class="bg-ink-950 text-white">
+        <div class="container py-16 md:py-20">
+            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <a href="index.html" class="flex items-center gap-3">
+                        <span class="grid place-items-center w-11 h-11 rounded-full bg-gold-500 text-white shrink-0">
+                            <span class="font-display text-xl leading-none pt-0.5">G</span>
+                        </span>
+                        <span class="leading-tight">
+                            <span class="block font-display text-xl">GrooveStreet</span>
+                            <span class="block text-[0.6rem] uppercase tracking-widest2 text-gold-300">Kampala · Uganda</span>
+                        </span>
+                    </a>
+                    <p class="mt-5 text-sm text-white/60 leading-relaxed">
+                        Welcome to Hotel GrooveStreet, where luxury meets African hospitality. We pride ourselves on
+                        delivering exceptional service and creating memorable experiences for every guest exploring the
+                        Pearl of Africa.
+                    </p>
+                    <div class="mt-6 flex gap-3">
+                        <a href="#" aria-label="Facebook"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:border-gold-400 hover:text-gold-400 transition-colors">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z" />
+                            </svg>
                         </a>
-                        <p class="text-gray-300">Welcome to Hotel GrooveStreet, where luxury meets African hospitality. We pride ourselves on delivering exceptional service and creating memorable experiences for every guest exploring the Pearl of Africa.</p>
+                        <a href="#" aria-label="Instagram"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:border-gold-400 hover:text-gold-400 transition-colors">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="3.5" />
+                                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="X"
+                            class="grid place-items-center w-10 h-10 rounded-full border border-white/15 hover:border-gold-400 hover:text-gold-400 transition-colors">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M17.5 3h3l-6.6 7.5L21.5 21h-6l-4.7-6.1L5.4 21h-3l7-8-7-10h6.2l4.3 5.6L17.5 3z" />
+                            </svg>
+                        </a>
                     </div>
+                </div>
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest2 text-gold-400">Explore</h2>
+                    <ul class="mt-5 space-y-3 text-sm">
+                        <li><a href="about-us.html" class="text-white/60 hover:text-gold-400 transition-colors">About Us</a></li>
+                        <li><a href="rooms.html" class="text-white/60 hover:text-gold-400 transition-colors">Rooms &amp; Suites</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-gold-400 transition-colors">Services</a></li>
+                        <li><a href="blog.html" class="text-white/60 hover:text-gold-400 transition-colors">News</a></li>
+                        <li><a href="elements.html" class="text-white/60 hover:text-gold-400 transition-colors">Elements</a></li>
+                    </ul>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="mt-8">
-                    <div class="footer-widget-area">
-                        <h6 class="widget-title mb-5 text-lg font-medium">Find us on the map</h6>
-                        <img src="img/bg-img/footer-map.png" alt="Location Map" class="w-full max-w-xs">
-                    </div>
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest2 text-gold-400">Contact</h2>
+                    <address class="mt-5 space-y-3 text-sm not-italic text-white/60">
+                        <p>Plot 12, Buganda Road<br>Kampala, Uganda</p>
+                        <p><a href="tel:+256414123456" class="hover:text-gold-400 transition-colors">+256 414 123 456</a></p>
+                        <p><a href="mailto:reservations@hotelgroovestreet.ug" class="hover:text-gold-400 transition-colors">reservations@hotelgroovestreet.ug</a></p>
+                    </address>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="mt-8">
-                    <div class="footer-widget-area">
-                        <h6 class="widget-title mb-5 text-lg font-medium">Subscribe to our newsletter</h6>
-                        <form action="#" method="post" class="subscribe-form">
-                            <div class="flex">
-                              <input type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail" class="flex-grow p-2 rounded-l text-gray-700">
-                              <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-r">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest2 text-gold-400">Newsletter</h2>
+                    <p class="mt-5 text-sm text-white/60">
+                        Receive offers on seasonal stays and Ugandan travel experiences.
+                    </p>
+                    <form data-demo-form data-demo-form="You're on the list. Watch your inbox for our next offer."
+                        class="mt-5 flex flex-wrap" novalidate>
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input id="newsletter-email" name="email" type="email" required placeholder="Your E-mail"
+                            class="w-full rounded-l-sm border border-white/20 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-gold-400 focus:outline-none">
+                        <button type="submit"
+                            class="rounded-r-sm bg-gold-500 px-5 py-3 text-xs uppercase tracking-widest2 text-white hover:bg-gold-600 transition-colors">Join</button>
+                        <p data-form-status class="mt-3 w-full text-xs text-gold-300" role="status"></p>
+                    </form>
                 </div>
-
-                <!-- Copywrite Text -->
-                <div class="col-12 mt-8">
-                    <div class="copywrite-text text-center text-gray-400">
-                        <p class="text-sm"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Hotel GrooveStreet Uganda
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </div>
-                </div>
+            </div>
+            <div class="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+                <p class="text-xs text-white/40">
+                    &copy; <span data-year>2026</span> Hotel GrooveStreet Uganda. All rights reserved.
+                </p>
+                <p class="text-xs text-white/40">Plot 12, Buganda Road, Kampala, Uganda</p>
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area End ##### -->
 
-    <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
+    <button type="button" data-back-to-top aria-label="Back to top"
+        class="fixed bottom-6 right-6 z-40 grid place-items-center w-12 h-12 rounded-full bg-ink-900 text-gold-400 shadow-xl opacity-0 pointer-events-none transition-all duration-300 hover:bg-ink-800">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <script src="js/main.js" defer></script>
+
 </body>
 
 </html>
+

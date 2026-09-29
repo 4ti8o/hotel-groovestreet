@@ -1,56 +1,213 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles for Hotel GrooveStreet */
+/* ==========================================================================
+   Hotel GrooveStreet — Base layer
+   ========================================================================== */
 @layer base {
-  h1 {
-    @apply text-4xl font-bold;
+  html {
+    @apply scroll-smooth antialiased;
   }
-  
-  h2 {
-    @apply text-3xl font-semibold;
-  }
-  
-  h3 {
-    @apply text-2xl font-medium;
-  }
-  
-  h4 {
-    @apply text-xl font-medium;
-  }
-  
-  h5 {
-    @apply text-lg font-medium;
-  }
-  
-  h6 {
-    @apply text-base font-medium;
-  }
-  
-  p {
-    @apply text-gray-600 leading-relaxed;
-  }
-  
+
   body {
-    @apply font-sans text-gray-700;
+    @apply font-sans text-ink-700 bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink-900;
+  }
+
+  ::selection {
+    @apply bg-gold-500 text-white;
+  }
+
+  /* Accessible focus ring for keyboard users */
+  :focus-visible {
+    @apply outline-none ring-2 ring-gold-500 ring-offset-2;
   }
 }
 
+/* ==========================================================================
+   Components — small, reusable, framework-agnostic helpers
+   ========================================================================== */
 @layer components {
+  /* ---- Buttons ---- */
   .btn {
-    @apply inline-block px-6 py-3 rounded-md text-white font-medium transition-colors duration-300;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5
+           font-sans text-sm font-medium uppercase tracking-widest2
+           transition-all duration-300 ease-smooth
+           disabled:opacity-50 disabled:pointer-events-none;
   }
-  
-  .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700;
+
+  .btn-gold {
+    @apply btn bg-gold-500 text-white shadow-lg shadow-gold-900/20
+           hover:bg-gold-600 hover:shadow-xl hover:shadow-gold-900/30 hover:-translate-y-0.5;
   }
-  
-  .section-padding {
-    @apply py-20 md:py-32;
+
+  .btn-outline {
+    @apply btn border border-white/40 text-white
+           hover:bg-white hover:text-ink-900 hover:border-white;
   }
-  
-  .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+
+  .btn-ink {
+    @apply btn bg-ink-900 text-white hover:bg-ink-800 hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply btn text-ink-700 hover:text-gold-600;
+  }
+
+  /* ---- Section rhythm ---- */
+  .section {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .section-tight {
+    @apply py-14 md:py-20;
+  }
+
+  /* ---- Section heading ---- */
+  .eyebrow {
+    @apply inline-block font-sans text-xs font-medium uppercase
+           tracking-widest2 text-gold-600;
+  }
+
+  .heading-xl {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.08];
+  }
+
+  .heading-lg {
+    @apply font-display text-3xl md:text-4xl lg:text-5xl font-medium leading-tight;
+  }
+
+  .heading-md {
+    @apply font-display text-2xl md:text-3xl font-medium leading-snug;
+  }
+
+  .lede {
+    @apply text-base md:text-lg text-ink-500 leading-relaxed max-w-2xl;
+  }
+
+  /* ---- Decorative gold rule used above headings ---- */
+  .rule {
+    @apply block h-px w-12 bg-gold-500;
+  }
+
+  /* ---- Primary navigation links ---- */
+  .nav-link {
+    @apply relative font-sans text-sm font-medium uppercase tracking-widest2
+           py-2 transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 -bottom-0.5 h-px w-0 bg-gold-500
+           transition-all duration-300 ease-smooth;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.is-active::after {
+    @apply w-full;
+  }
+
+  /* ---- Overlays ---- */
+  .overlay-dark {
+    @apply absolute inset-0 bg-ink-950/60;
+  }
+
+  .overlay-darker {
+    @apply absolute inset-0 bg-ink-950/75;
+  }
+
+  /* ---- Forms ---- */
+  .field {
+    @apply w-full rounded-sm border border-ink-200 bg-white px-4 py-3
+           text-sm text-ink-800 placeholder:text-ink-400
+           transition-colors duration-200
+           focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500;
+  }
+
+  .field-dark {
+    @apply w-full rounded-sm border border-white/25 bg-white/5 px-4 py-3
+           text-sm text-white placeholder:text-white/50
+           transition-colors duration-200
+           focus:border-gold-400 focus:bg-white/10 focus:outline-none;
+  }
+
+  .label {
+    @apply block font-sans text-xs font-medium uppercase tracking-widest2 text-ink-500;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    @apply bg-white rounded-sm shadow-sm ring-1 ring-ink-100/70
+           transition-all duration-500 ease-smooth;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-xl hover:ring-gold-500/30 hover:-translate-y-1.5;
+  }
+
+  /* ---- Prose helpers for long-form text ---- */
+  .prose-ink p {
+    @apply text-ink-600 leading-relaxed mb-5;
+  }
+
+  .prose-ink p:last-child {
+    @apply mb-0;
+  }
+}
+
+/* ==========================================================================
+   Utilities — tiny helpers that do not justify a component
+   ========================================================================== */
+@layer utilities {
+  /* Reveal-on-scroll: hidden until `data-reveal` is observed by main.js */
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  [data-reveal].is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Hide scrollbar on horizontal carousels */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Reduced motion — honour the user's OS preference
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
   }
 }

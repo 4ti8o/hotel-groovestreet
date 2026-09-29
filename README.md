@@ -28,11 +28,44 @@ Hotel GrooveStreet Uganda is a premier luxury hotel that combines contemporary e
 
 ## Technologies Used
 
-- HTML5
-- Tailwind CSS (converted from Bootstrap)
-- JavaScript
-- jQuery
-- Responsive Design Principles
+- HTML5 (semantic, accessible markup)
+- Tailwind CSS v3 (compiled to `style.css`)
+- Vanilla JavaScript (`js/main.js`) — no jQuery, no Bootstrap, no plugins
+- Google Fonts: Cormorant Garamond (display) + Jost (sans)
+
+## Project Structure
+
+```
+index.html            Home page (source of truth for the shared shell)
+about-us.html         Generated from the shared shell
+rooms.html            Generated
+services.html         Generated
+blog.html             Generated
+contact.html          Generated
+elements.html         Generated
+
+src/input.css         Tailwind source (design tokens + components)
+tailwind.config.js    Theme: colours, fonts, animations
+style.css             Compiled output — do not edit by hand
+js/main.js            All site behaviour
+img/                  Images
+.kilo/                Page build script + verification script
+```
+
+### How pages are built
+
+`index.html` owns the shared header, footer and `<main>` wrapper. The other six
+pages are generated from it so the navigation and footer never drift apart:
+
+```bash
+npm run build:pages   # regenerate the six secondary pages
+npm run build:css     # recompile style.css
+npm run build         # both
+npm test              # structural + Palatin-residue + image checks
+```
+
+If you change the header or footer, edit `index.html` then run
+`npm run build:pages`. Edit `src/input.css` (not `style.css`) for styling.
 
 ## Installation
 
@@ -41,17 +74,25 @@ To run this website locally:
 1. Clone or download this repository to your local machine
 2. Navigate to the project directory
 3. Install dependencies: `npm install`
-4. Build Tailwind CSS: `npx tailwindcss -i ./src/input.css -o ./style.css`
-5. Open [index.html](file:///D:%5CGROOVESTREET%5CWEB%5Chotel-groovestreet%5Cindex.html) in your preferred web browser
+4. Build: `npm run build`
+5. Serve: `npm start` (or `npm run dev` for live reload)
+6. Open `http://localhost:3000`
 
 ## Customization
 
-The website is built with customization in mind. You can easily modify:
+- **Colours and fonts** — `tailwind.config.js` (the `gold` and `ink` scales)
+- **Reusable styles** — `src/input.css` under `@layer components`
+- **Behaviour** — `js/main.js`; each feature is an independent module that
+  no-ops when its markup is absent
+- **Content** — page text lives in the templates under `.kilo/content-*.js`
 
-- Content and text throughout the site to reflect Ugandan context
-- Images to match local property and attractions
-- Colors and styling in the Tailwind configuration
-- Functionality in the JavaScript files
+### Notes
+
+- The reservation, contact and newsletter forms are front-end demonstrations;
+  they validate and confirm inline but submit nowhere. Wire them to a backend
+  when one exists.
+- The contact map lazy-loads the Google Maps JavaScript API and shows the
+  address as a fallback if it cannot load.
 
 ## Contributing
 
